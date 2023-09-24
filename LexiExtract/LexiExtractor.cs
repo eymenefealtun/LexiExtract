@@ -1,15 +1,14 @@
 ﻿using LexiExtract.Exceptions;
-using System.Net;
-using System.Text;
 
 namespace LexiExtract
 {
     public static class LexiExtractor
     {
 
-        private static string[] _languageArray;
-        private static string _url = "";
+        internal static string[]? _languageArray;
+
         private static Random _random = new Random();
+
 
 
         /// <summary>
@@ -22,31 +21,15 @@ namespace LexiExtract
         /// <returns></returns>
         public static string[] GetLanguageArray(Languages.languages language)
         {
-            if (Languages.mainWords.Count == 0) Helpers.SetMainSourceDictionary();
-
             try
             {
-                _url = Helpers.GetUrl(language, Languages.mainWords);
-
-                HttpWebRequest request = (HttpWebRequest)WebRequest.Create(_url);
-                HttpWebResponse response = (HttpWebResponse)request.GetResponse();
-
-                Stream receiveStream = response.GetResponseStream();
-                StreamReader readStream = response.CharacterSet == null ? new StreamReader(receiveStream) : new StreamReader(receiveStream, Encoding.GetEncoding(response.CharacterSet));
-
-
-                _languageArray = readStream.ReadToEnd().Split(',');
-
-                response.Close();
-                readStream.Close();
-
+                Helpers.AnotherHandleHttp(Helpers.GetMainUrl(language));
                 return _languageArray;
             }
             catch (Exception)
             {
                 throw new LanguageNotFoundException($"Your internet connection might be broken, or the server may be down.");
             }
-
         }
 
 

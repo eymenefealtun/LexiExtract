@@ -1,4 +1,6 @@
 ﻿using static LexiExtract.Languages;
+using System.Net;
+using System.Text;
 
 namespace LexiExtract
 {
@@ -6,22 +8,27 @@ namespace LexiExtract
     {
         private static string baseUrl = "https://raw.githubusercontent.com/eymenefealtun/all-words-in-all-languages/main/";
 
-        public static string GetUrl(languages language, Dictionary<languages, string> source)
+        internal static string GetMainUrl(languages language)
         {
-            return source.Where(x => x.Key == language).FirstOrDefault().Value;
+            return baseUrl + $"{language}/{language}.txt";
         }
 
-        public static void SetMainSourceDictionary()
+        internal static void HandleHttp(string url)
         {
-            foreach (var key in Enum.GetValues(typeof(languages)).Cast<languages>())
-                mainWords.Add(key, GetMainName(key) + ".txt");
+            HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
+            using (HttpWebResponse response = (HttpWebResponse)request.GetResponse())
+            using (Stream stream = response.GetResponseStream())
+            using (StreamReader readStream = response.CharacterSet == null ? new StreamReader(stream) : new StreamReader(stream, Encoding.GetEncoding(response.CharacterSet)))
+                LexiExtractor._languageArray = readStream.ReadToEnd().Split(',');
+        }
+
+        internal static void AnotherHandleHttp(string url)
+        {
+            using (StreamReader reader = new StreamReader(new HttpClient().Send(new HttpRequestMessage(HttpMethod.Get, url)).Content.ReadAsStream()))
+                LexiExtractor._languageArray = reader.ReadToEnd().Split(',');
         }
 
 
-        private static string GetMainName(languages language)
-        {
-            return baseUrl + $"{language}/{language}";
-        }
 
     }
 }

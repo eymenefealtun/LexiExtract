@@ -23,6 +23,7 @@
             Persian,
             Portuguese,
             Romanian,
+            Russian,
             Serbian,
             Spanish,
             Swedish,
@@ -30,7 +31,6 @@
             Vietnamese
         }
 
-        internal static Dictionary<languages, string> mainWords = new Dictionary<languages, string>() { };
 
 
     }
