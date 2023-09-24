@@ -5,10 +5,6 @@ VisualStudioVersion = 17.6.33712.159
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LexiExtract", "LexiExtract\LexiExtract.csproj", "{97017ABF-FF6D-4327-A3F7-70EC52FEA3E4}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LexiExtractTest", "LexiExtractTest\LexiExtractTest.csproj", "{039BFAA8-F772-4DC5-83D8-1AD9FE9B5632}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LexiExtractWinFormsTest", "LexiExtractWinFormsTest\LexiExtractWinFormsTest.csproj", "{6B1EE5DF-030C-4C5F-BBDA-708599420985}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,14 +15,6 @@ Global
 		{97017ABF-FF6D-4327-A3F7-70EC52FEA3E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{97017ABF-FF6D-4327-A3F7-70EC52FEA3E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{97017ABF-FF6D-4327-A3F7-70EC52FEA3E4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{039BFAA8-F772-4DC5-83D8-1AD9FE9B5632}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{039BFAA8-F772-4DC5-83D8-1AD9FE9B5632}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{039BFAA8-F772-4DC5-83D8-1AD9FE9B5632}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{039BFAA8-F772-4DC5-83D8-1AD9FE9B5632}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6B1EE5DF-030C-4C5F-BBDA-708599420985}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6B1EE5DF-030C-4C5F-BBDA-708599420985}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6B1EE5DF-030C-4C5F-BBDA-708599420985}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6B1EE5DF-030C-4C5F-BBDA-708599420985}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

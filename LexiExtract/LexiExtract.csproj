@@ -4,6 +4,26 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <PackageId>LexiExtract</PackageId>
+    <Title>LexiExtract</Title>
+    <Authors>Eymen Efe Altun</Authors>
+    <Copyright></Copyright>
+    <PackageProjectUrl></PackageProjectUrl>
+    <Description>A .NET library for extracting millions of words from any language 
+that exists in the universe, with just one line of code.</Description>
+    <RepositoryUrl>https://github.com/eymenefealtun/LexiExtract</RepositoryUrl>
+    <PackageTags>Language,Words,Dataset,Extracting</PackageTags>
+    <PackageIcon>LexiExtractMainIcon.png</PackageIcon>
+    <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+    <PackageLicenseExpression> Apache-2.0</PackageLicenseExpression>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\..\Desktop\LexiExtractMainIcon.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
 </Project>

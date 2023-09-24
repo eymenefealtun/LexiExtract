@@ -4,27 +4,22 @@ namespace LexiExtract
 {
     public static class LexiExtractor
     {
-
-        internal static string[]? _languageArray;
-
         private static Random _random = new Random();
-
 
 
         /// <summary>
         /// Extracts all the available words from the server.
         /// </summary>
         /// <returns>
-        /// Returns string array.
+        /// a string array.
         /// </returns>
         /// <param name="language"></param>
-        /// <returns></returns>
+        /// <exception cref="LanguageNotFoundException"></exception>
         public static string[] GetLanguageArray(Languages.languages language)
         {
             try
             {
-                Helpers.AnotherHandleHttp(Helpers.GetMainUrl(language));
-                return _languageArray;
+                return Helpers.ExtractArray(Helpers.GetMainUrl(language));
             }
             catch (Exception)
             {
@@ -37,7 +32,7 @@ namespace LexiExtract
         /// Returns random words array.
         /// </summary>
         /// <returns>
-        /// Returns string array.
+        /// a string array.
         /// </returns>
         /// <param name="source"> asdasdasdasdasd</param>
         /// <param name="numberOfWords"></param>

@@ -13,22 +13,13 @@ namespace LexiExtract
             return baseUrl + $"{language}/{language}.txt";
         }
 
-        internal static void HandleHttp(string url)
+        internal static string[] ExtractArray(string url)
         {
             HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
             using (HttpWebResponse response = (HttpWebResponse)request.GetResponse())
             using (Stream stream = response.GetResponseStream())
             using (StreamReader readStream = response.CharacterSet == null ? new StreamReader(stream) : new StreamReader(stream, Encoding.GetEncoding(response.CharacterSet)))
-                LexiExtractor._languageArray = readStream.ReadToEnd().Split(',');
+                return readStream.ReadToEnd().Split(',');
         }
-
-        internal static void AnotherHandleHttp(string url)
-        {
-            using (StreamReader reader = new StreamReader(new HttpClient().Send(new HttpRequestMessage(HttpMethod.Get, url)).Content.ReadAsStream()))
-                LexiExtractor._languageArray = reader.ReadToEnd().Split(',');
-        }
-
-
-
     }
 }
