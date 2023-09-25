@@ -3,7 +3,7 @@ name: "Deploy to NuGet"
 on:
   push:
      tags:
-        - '.*' 
+        - '*' 
 
 env:
   PROJECT_PATH: 'LexiExtract/LexiExtract.csproj'
