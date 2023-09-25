@@ -28,6 +28,11 @@ using LexiExtract;
 ```
 ---
 
+### Available languages
+[All words in all languages](https://github.com/eymenefealtun/all-words-in-all-languages) 
+
+---
+
 ### How to contribute?
  1. [Fork](https://github.com/eymenefealtun/LexiExtract/fork) the repository.
  2. Make changes.
