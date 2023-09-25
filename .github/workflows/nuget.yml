@@ -3,7 +3,7 @@ name: "Deploy to NuGet"
 on:
   push:
      tags:
-        - '.*' 
+        - '*' 
 
 env:
   PROJECT_PATH: 'LexiExtract/LexiExtract.csproj'
@@ -23,6 +23,22 @@ jobs:
         with:
           dotnet-version: '6.0.x'
       
+          
+      - run: dotnet restore ${{ env.PROJECT_PATH }}
+  
+      - run: dotnet build ${{ env.PROJECT_PATH }} -c Release --no-restore
+  
+      - run: dotnet publish ${{ env.PROJECT_PATH }} -c Release #--self-contained -r win-x64 -p:PublishSingleFile=true
+  
+      - uses: actions/create-release@v1
+        id: create_release
+        env: 
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with: 
+          tag_name: ${{ github.ref }} 
+          release_name: ${{ github.ref }}
+
+
       - name: 'Restore packages'
         run: dotnet restore ${{ env.PROJECT_PATH }}
       
