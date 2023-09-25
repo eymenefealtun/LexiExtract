@@ -13,13 +13,13 @@
 			that exists in the universe, with just one line of code.
 		</Description>
 		<RepositoryUrl>https://github.com/eymenefealtun/LexiExtract</RepositoryUrl>
+		<PackageProejectUrl>https://github.com/eymenefealtun/LexiExtract</PackageProejectUrl>
 		<PackageTags>Language,Words,Dataset,Extracting</PackageTags>
 		<RepositoryType>git</RepositoryType>
 		<PackageIcon>LexiExtractMainIcon.png</PackageIcon>
 		<GeneratePackageOnBuild>False</GeneratePackageOnBuild>
 		<PackageLicenseExpression> Apache-2.0</PackageLicenseExpression>
 		<PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
-		<PackageProjectUrl>https://github.com/eymenefealtun/LexiExtract</PackageProjectUrl>
 	</PropertyGroup>
 
 	<ItemGroup>
