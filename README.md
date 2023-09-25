@@ -28,14 +28,6 @@ using LexiExtract;
 ```
 ---
 
-### Created By: [@eymenefealtun](https://github.com/eymenefealtun)
-* [Linkedin](https://www.linkedin.com/in/eymen-efe-altun-a1681821b)
-* [Youtube](https://www.youtube.com/@eymenefealtunn/videos)
-* [Fiverr](https://www.fiverr.com/eymenefealtun?public_mode=true)
-* [Upwork](https://www.upwork.com/freelancers/~012eff1f3b2a153f38)
-
----
-
 ### How to contribute?
  1. [Fork](https://github.com/eymenefealtun/LexiExtract/fork) the repository.
  2. Make changes.
