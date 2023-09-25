@@ -1,6 +1,6 @@
 # LexiExtract
 <p align="center">
-  <img src="https://github.com/eymenefealtun/LexiExtract/blob/master/RepoResources/LexiExtractMainIcon?raw=true" alt="Sublime's custom image"/>
+  <img src="https://github.com/eymenefealtun/LexiExtract/blob/master/RepoResources/LexiExtractMainIcon.png?raw=true" alt="Sublime's custom image"/>
 </p>
 
 <p align="center">
