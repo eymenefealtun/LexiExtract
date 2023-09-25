@@ -20,7 +20,7 @@ dotnet add package LexiExtract
 ### Example
 ```csharp
 using LexiExtract;
-                         //returns all the available word in a string array  
+                         //returns all the available words in a string array  
  string[] englishWords = LexiExtractor.GetLanguageArray(Languages.languages.English);
                         
                         //get random words from string array
