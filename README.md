@@ -24,7 +24,7 @@ using LexiExtract;
  string[] englishWords = LexiExtractor.GetLanguageArray(Languages.languages.English);
                         
                         //get random words from string array
- string[] randomWords = words.GetRandomWords(10);
+ string[] randomWords = englishWords.GetRandomWords(10);
 ```
 ---
 
