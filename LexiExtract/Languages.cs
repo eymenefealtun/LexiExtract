@@ -8,6 +8,7 @@
             Arabic,
             Armenian,
             Azerbaijani,
+            Bengali,
             Bulgarian,
             Chinese,
             English,
