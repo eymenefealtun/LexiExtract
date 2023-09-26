@@ -20,6 +20,7 @@
             Hebrew,
             Hindi,
             Italian,
+            Japanese,
             Kurdish,
             Persian,
             Portuguese,
