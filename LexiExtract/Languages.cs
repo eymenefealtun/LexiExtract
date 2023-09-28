@@ -30,6 +30,7 @@
             Spanish,
             Swedish,
             Turkish,
+            Urdu,
             Vietnamese
         }
 
