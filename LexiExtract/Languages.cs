@@ -19,6 +19,7 @@
             Greek,
             Hebrew,
             Hindi,
+            Indonesian,
             Italian,
             Japanese,
             Kurdish,
