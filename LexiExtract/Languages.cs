@@ -11,6 +11,7 @@
             Bengali,
             Bulgarian,
             Chinese,
+            Czech,
             English,
             Finnish,
             French,
