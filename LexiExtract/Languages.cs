@@ -13,6 +13,7 @@
             Chinese,
             Czech,
             English,
+            Filipino,
             Finnish,
             French,
             Georgian,
