@@ -26,6 +26,7 @@
             Japanese,
             Kurdish,
             Persian,
+            Polish,
             Portuguese,
             Romanian,
             Russian,
