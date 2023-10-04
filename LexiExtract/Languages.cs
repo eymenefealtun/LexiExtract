@@ -12,6 +12,7 @@
             Bulgarian,
             Chinese,
             Czech,
+            Dutch,
             English,
             Filipino,
             Finnish,
