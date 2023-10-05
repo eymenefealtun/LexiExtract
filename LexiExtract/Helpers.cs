@@ -1,5 +1,4 @@
-﻿using static LexiExtract.Languages;
-using System.Net;
+﻿using System.Net;
 using System.Text;
 
 namespace LexiExtract
@@ -8,7 +7,7 @@ namespace LexiExtract
     {
         private static string baseUrl = "https://raw.githubusercontent.com/eymenefealtun/all-words-in-all-languages/main/";
 
-        internal static string GetMainUrl(languages language)
+        internal static string GetMainUrl(Languages language)
         {
             return baseUrl + $"{language}/{language}.txt";
         }

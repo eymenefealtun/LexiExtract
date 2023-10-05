@@ -15,7 +15,7 @@ namespace LexiExtract
         /// </returns>
         /// <param name="language"></param>
         /// <exception cref="LanguageNotFoundException"></exception>
-        public static string[] GetLanguageArray(Languages.languages language)
+        public static string[] GetLanguageArray(Languages language)
         {
             try
             {
