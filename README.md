@@ -4,6 +4,10 @@
 [![NuGet](https://img.shields.io/nuget/v/LexiExtract.svg)](https://nuget.org/packages/LexiExtract) [![Nuget](https://img.shields.io/nuget/dt/LexiExtract.svg)](https://nuget.org/packages/LexiExtract)
 
 **LexiExtract** is a .NET library that allows developers to retrieve millions of words for the requested language with just one line of code.
+All the data is stored in [all-words-in-all-languages](https://github.com/eymenefealtun/all-words-in-all-languages) repository.
+
+### Important Note:
+Via this library, you are going to be sending a request to the [all-words-in-all-languages](https://github.com/eymenefealtun/all-words-in-all-languages).
 
 ---
 
