@@ -22,6 +22,7 @@
         Indonesian,
         Italian,
         Japanese,
+        Korean,
         Kurdish,
         Persian,
         Polish,
