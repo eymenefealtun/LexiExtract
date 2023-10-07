@@ -11,6 +11,7 @@
         Czech,
         Dutch,
         English,
+        Esperanto,
         Filipino,
         Finnish,
         French,
