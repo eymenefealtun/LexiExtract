@@ -7,7 +7,7 @@
 All the data is stored in [all-words-in-all-languages](https://github.com/eymenefealtun/all-words-in-all-languages) repository.
 
 ### Important Note:
-Via this library, you are going to be sending a request to the [all-words-in-all-languages](https://github.com/eymenefealtun/all-words-in-all-languages).
+Via this library, you are going to be sending a GET request to the [all-words-in-all-languages](https://github.com/eymenefealtun/all-words-in-all-languages).
 
 ---
 
