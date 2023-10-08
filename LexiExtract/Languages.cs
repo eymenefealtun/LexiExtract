@@ -20,6 +20,7 @@
         Greek,
         Hebrew,
         Hindi,
+        Hungarian,
         Indonesian,
         Italian,
         Japanese,
