@@ -32,6 +32,7 @@
         Romanian,
         Russian,
         Serbian,
+        Slovak,
         Slovenian,
         Spanish,
         Swedish,
