@@ -21,6 +21,7 @@
         Hebrew,
         Hindi,
         Hungarian,
+        Icelandic,
         Indonesian,
         Italian,
         Japanese,
