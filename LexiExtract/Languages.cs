@@ -28,6 +28,7 @@
         Korean,
         Kurdish,
         Lithuanian,
+        Pashto,
         Persian,
         Polish,
         Portuguese,
