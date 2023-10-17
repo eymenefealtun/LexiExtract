@@ -27,6 +27,7 @@
         Japanese,
         Korean,
         Kurdish,
+        Latvian,
         Lithuanian,
         Pashto,
         Persian,
