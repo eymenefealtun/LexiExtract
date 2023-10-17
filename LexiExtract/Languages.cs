@@ -40,6 +40,7 @@
         Slovenian,
         Spanish,
         Swedish,
+        Thai,
         Turkish,
         Ukranian,
         Urdu,
