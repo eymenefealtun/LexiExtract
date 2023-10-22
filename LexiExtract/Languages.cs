@@ -29,6 +29,7 @@
         Kurdish,
         Latvian,
         Lithuanian,
+        Norwegian,
         Pashto,
         Persian,
         Polish,
