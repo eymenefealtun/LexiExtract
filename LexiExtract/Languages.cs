@@ -15,6 +15,7 @@
         Filipino,
         Finnish,
         French,
+        Galician,
         Georgian,
         German,
         Greek,
