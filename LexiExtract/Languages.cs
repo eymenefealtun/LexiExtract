@@ -9,6 +9,7 @@
         Bulgarian,
         Chinese,
         Czech,
+        Danish,
         Dutch,
         English,
         Estonian,
