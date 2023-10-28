@@ -8,6 +8,7 @@
         Bengali,
         Bulgarian,
         Chinese,
+        Croatian,
         Czech,
         Danish,
         Dutch,
