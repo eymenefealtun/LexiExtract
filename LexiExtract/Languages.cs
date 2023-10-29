@@ -7,6 +7,7 @@
         Azerbaijani,
         Bengali,
         Bulgarian,
+        Catalan,
         Chinese,
         Croatian,
         Czech,
