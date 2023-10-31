@@ -5,6 +5,7 @@
         Arabic,
         Armenian,
         Azerbaijani,
+        Belarusian,
         Bengali,
         Bulgarian,
         Catalan,
