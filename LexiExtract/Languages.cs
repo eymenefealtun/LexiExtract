@@ -3,6 +3,7 @@
     public enum Languages
     {
         Arabic,
+        Afrikaans,
         Armenian,
         Azerbaijani,
         Belarusian,
