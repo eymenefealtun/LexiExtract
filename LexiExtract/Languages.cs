@@ -35,6 +35,7 @@
         Japanese,
         Korean,
         Kurdish,
+        Kyrgyz,
         Latvian,
         Lithuanian,
         Malay,
