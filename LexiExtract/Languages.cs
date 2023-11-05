@@ -30,6 +30,7 @@
         Hindi,
         Hungarian,
         Icelandic,
+        Igbo,
         Indonesian,
         Italian,
         Japanese,
