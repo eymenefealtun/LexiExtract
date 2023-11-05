@@ -8,7 +8,7 @@ namespace LexiExtract
         private static string baseUrl = "https://raw.githubusercontent.com/eymenefealtun/all-words-in-all-languages/main/";
         private static HttpClient _httpClient = new HttpClient();
 
-        internal static string GetMainUrl(Languages language)
+        internal static string GetMainUrl(string language)
         {
             return baseUrl + $"{language}/{language}.txt";
         }

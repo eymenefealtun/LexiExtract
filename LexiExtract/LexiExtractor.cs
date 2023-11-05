@@ -6,48 +6,6 @@ namespace LexiExtract
     {
         private static Random _random = new Random();
 
-
-        /// <summary>
-        /// Extracts all the available words from the server.
-        /// </summary>
-        /// <returns>
-        /// a string array.
-        /// </returns>
-        /// <param name="language"></param>
-        /// <exception cref="LanguageNotFoundException"></exception>
-        public static string[] GetLanguageArray(Languages language)
-        {
-            try
-            {
-                return Helpers.ExtractArray(Helpers.GetMainUrl(language));
-            }
-            catch (Exception)
-            {
-                throw new LanguageNotFoundException($"Your internet connection might be broken, or the server may be down.");
-            }
-        }
-
-        /// <summary>
-        /// Extracts all the available words from the server.
-        /// </summary>
-        /// <returns>
-        /// a string array.
-        /// </returns>
-        /// <param name="language"></param>
-        /// <exception cref="LanguageNotFoundException"></exception>
-        public static Task<string[]> GetLanguageArrayAsync(Languages language)
-        {
-            try
-            {
-                return Helpers.ExtractArrayAsync(Helpers.GetMainUrl(language));
-            }
-            catch (Exception)
-            {
-                throw new LanguageNotFoundException($"Your internet connection might be broken, or the server may be down.");
-            }
-        }
-
-
         /// <summary>
         /// Returns random words array.
         /// </summary>
