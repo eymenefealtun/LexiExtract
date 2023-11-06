@@ -1,6 +1,4 @@
-﻿using LexiExtract.Exceptions;
-
-namespace LexiExtract
+﻿namespace LexiExtract
 {
     public static class LexiExtractor
     {
@@ -24,7 +22,6 @@ namespace LexiExtract
 
             return resultArray;
         }
-
 
     }
 }
