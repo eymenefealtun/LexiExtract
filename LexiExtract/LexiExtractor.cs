@@ -5,7 +5,7 @@
         private static Random _random = new Random();
 
         /// <summary>
-        /// Returns random words array.
+        /// Returns random words from the source array.
         /// </summary>
         /// <returns>
         /// a string array.
@@ -21,6 +21,16 @@
                 resultArray[i] = source[_random.Next(source.Length)];
 
             return resultArray;
+        }
+
+        /// <summary>
+        /// Return one random word from the source array.
+        /// </summary>
+        /// <param name="source"></param>
+        /// <returns></returns>
+        public static string GetRandomWord(this string[] source)
+        {
+            return source[_random.Next(source.Length)];
         }
 
     }

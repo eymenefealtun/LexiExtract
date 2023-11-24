@@ -24,11 +24,14 @@ dotnet add package LexiExtract
 ### Example
 ```csharp
 using LexiExtract;
-                         //returns all the available words in a string array  
- string[] englishWords = LexiExtractor.GetLanguageArray(Languages.English);
-                        
-                        //get random words from string array
- string[] randomWords = englishWords.GetRandomWords(10);
+
+
+string[] englishWords = new LexiExtract.Languages.English().GetAllWords();
+string[] englishWordsAsync = await new LexiExtract.Languages.English().GetAllWordsAsync();
+
+string randomWord = englishWords.GetRandomWord();
+string[] randomWords = englishWords.GetRandomWords(10);
+
 ```
 ---
 
