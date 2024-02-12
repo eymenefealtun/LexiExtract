@@ -33,5 +33,25 @@
             return source[_random.Next(source.Length)];
         }
 
+
+
+        /// <summary>
+        /// Return all the available language classes.
+        /// </summary>
+        /// <returns></returns>
+        public static List<Language> GetLanguages()
+        {
+            return typeof(Language).Assembly.GetTypes().Where(t => t.IsSubclassOf(typeof(Language))).Select(t => (Language)Activator.CreateInstance(t)).ToList();
+        }
+
+        /// <summary>
+        /// Return the language class from its name.
+        /// </summary>
+        /// <returns></returns>
+        public static Language GetLanguage(string languageName)
+        {
+            return typeof(Language).Assembly.GetTypes().Where(t => t.IsSubclassOf(typeof(Language))).Select(t => (Language)Activator.CreateInstance(t)).ToList().Where(x => x.GetType().Name.ToLower() == languageName.ToLower()).FirstOrDefault();
+        }
+
     }
 }
