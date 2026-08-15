@@ -18,7 +18,7 @@ namespace LexiExtract
             HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
             using (HttpWebResponse response = (HttpWebResponse)request.GetResponse())
             using (Stream stream = response.GetResponseStream())
-            using (StreamReader readStream = string.IsNullOrEmpty(response.CharacterSet) ? new StreamReader(stream) : new StreamReader(stream, Encoding.GetEncoding(response.CharacterSet)))
+            using (StreamReader readStream = new StreamReader(stream, Encoding.UTF8))
                 return readStream.ReadToEnd().Split(',');
         }
 
