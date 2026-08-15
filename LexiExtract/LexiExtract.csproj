@@ -20,7 +20,7 @@
 		<PackageLicenseExpression> Apache-2.0</PackageLicenseExpression>
 		<PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
 		<PackageProjectUrl>https://github.com/eymenefealtun/LexiExtract</PackageProjectUrl>
-		<Version>4.1.0</Version>
+		<Version>4.1.1</Version>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 	</PropertyGroup>
 
